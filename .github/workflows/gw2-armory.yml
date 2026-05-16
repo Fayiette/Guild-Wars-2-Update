@@ -8,10 +8,8 @@ on:
 jobs:
   fetch:
     runs-on: ubuntu-latest
+    # All config below is read from Secrets on Environment "prod" (Settings → Environments → prod → Environment secrets).
     environment: prod
-    defaults:
-      run:
-        working-directory: 'Guild Wars 2'
 
     steps:
       - name: Checkout
